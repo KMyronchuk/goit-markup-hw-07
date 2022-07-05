@@ -1,0 +1,33 @@
+.form__sub {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.form__input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: $shadow;
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+
+
+    padding: 0;
+    padding-left: 16px;
+
+
+    background-color: $footer-background-color;
+    color: $white-text;
+}
+
+
+.form__icon {
+    margin-left: 10px;
+}
+
+.form__button {
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

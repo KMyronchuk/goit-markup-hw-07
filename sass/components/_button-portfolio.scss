@@ -29,9 +29,7 @@
     cursor: pointer;
 
 
-    transition-property: color, background-color, ;
-    transition-duration: 250ms;
-    transition-timing-function: $cubic-function;
+ @include transitions(color background-color);
 
     &:hover,
     &:focus {background-color: $accent-color;
@@ -42,3 +40,5 @@
     }
 }
 
+.menu__button--active {background-color: $botton-background-color;
+color: $button-accent-color;}

@@ -18,40 +18,9 @@ $footer-background-color: #2F303A;
 $address-color: rgba(255, 255, 255, 0.6);
 $shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 $overlay-background-color: rgba(33, 150, 243, 0.9);
-
-
-body {
-    background-color: $background-color;
-    font-family: Roboto, sans-serif;
-}
-
-
-
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.section {
-    padding-bottom: 94px;
-    padding-top: 94px;
-}
-
-.section-title {
-    margin-bottom: 50px;
-
-    color: $title-text-color;
-
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
+$font-primary: Roboto, sans-serif;
+$font-secondary: Raleway, sans-serif;
+$property: color, background-color;
 
 
 

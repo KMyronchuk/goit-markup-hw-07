@@ -46,9 +46,7 @@
 
 
 
-    transition-property: background-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: $cubic-function;
+    @include transitions(color background-color);
 
     &:hover,
     &:focus {color: $button-accent-color;

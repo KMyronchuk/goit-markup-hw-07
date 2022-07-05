@@ -1,0 +1,60 @@
+.checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 14px;
+
+}
+
+
+.checkbox__input {
+    appearance: none;
+    position: absolute;
+
+    &:checked+.checkbox__frame {
+        opacity: 0;
+    }
+
+    &:focus+.checkbox__frame {
+        box-shadow: $shadow;
+    }
+
+    &:checked~.checkbox__icon {
+        opacity: 1;
+    }
+}
+
+.checkbox__frame {
+    opacity: 1;
+    transition: opacity 250ms $cubic-function,
+        box-shadow 250ms $cubic-function;
+}
+
+.checkbox__icon {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 250ms $cubic-function;
+}
+
+
+.checkbox__agreement {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: $primary-textcolor;
+
+    margin-left: 7px;
+}
+
+.checkbox__link {
+    text-decoration-line: underline;
+    color: $accent-color;
+    margin-left: 4px;
+    font-size: 14px;
+
+    &:hover {
+        text-decoration-line: none
+    }
+}

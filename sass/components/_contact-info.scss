@@ -1,0 +1,38 @@
+.contact-info {
+    display: flex;
+    margin-left: auto;
+
+}
+
+.contact-info__item {
+    margin-left: 30px;
+
+}
+
+.contact-info__link {
+    display: flex;
+    color: $primary-textcolor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+
+@include transitions(color background-color);
+
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+
+.contact-info__icon {
+
+    margin-right: 10px;
+    align-self: center;
+    fill: currentColor;
+
+}

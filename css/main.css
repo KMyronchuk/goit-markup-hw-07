@@ -1,29 +1,6 @@
-body {
-  background-color: #FFFFFF;
-  font-family: Roboto, sans-serif;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .section {
-  padding-bottom: 94px;
   padding-top: 94px;
-}
-
-.section-title {
-  margin-bottom: 50px;
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+  padding-bottom: 94px;
 }
 
 h1,
@@ -47,10 +24,36 @@ img {
   padding: 0;
 }
 
-.header-info {
+body {
+  background-color: #FFFFFF;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header__info {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
@@ -65,6 +68,10 @@ img {
 
 .logo__accent {
   color: #2196F3;
+}
+
+.logo__footer {
+  color: #FFFFFF;
 }
 
 .site-nav {
@@ -93,7 +100,7 @@ img {
   text-decoration: none;
   color: #212121;
   position: relative;
-  transition-property: color;
+  transition-property: color background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -132,7 +139,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  transition-property: color;
+  transition-property: color background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -180,7 +187,7 @@ img {
   text-decoration: none;
   cursor: pointer;
   border-radius: 4px;
-  transition-property: background-color, color;
+  transition-property: color background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -349,7 +356,7 @@ img {
   height: 44px;
   border-radius: 50%;
   color: #AFB1B8;
-  transition-property: background-color, color;
+  transition-property: color background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -386,7 +393,7 @@ img {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   color: #AFB1B8;
-  transition-property: border-color, color;
+  transition-property: color background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -402,10 +409,6 @@ img {
 .footer {
   padding: 60px 0;
   background-color: #2F303A;
-}
-
-.logo__footer {
-  color: #FFFFFF;
 }
 
 .footer .container {
@@ -448,7 +451,7 @@ img {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   color: #FFFFFF;
-  transition-property: background-color;
+  transition-property: color background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -479,7 +482,7 @@ img {
 .address__info {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  transition-property: color;
+  transition-property: color background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -550,7 +553,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-modal {
+.modal__form {
   padding: 0 40px;
 }
 
@@ -573,17 +576,17 @@ img {
   fill: #2196F3;
 }
 
-.form-modal__field {
+.modal__field {
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.form-modal__field:hover {
+.modal__field:hover {
   cursor: pointer;
 }
 
-.form-modal__input {
+.modal__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
@@ -591,14 +594,14 @@ img {
   padding-left: 42px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-modal__input:focus-within {
+.modal__input:focus-within {
   border: 1px solid #2196F3;
 }
-.form-modal__input:focus-within ~ .form-modal__icon {
+.modal__input:focus-within ~ .modal__icon {
   fill: #2196F3;
 }
 
-.form-modal__title {
+.modal__title {
   font-size: 20px;
   line-height: 23px;
   margin-top: 40px;
@@ -606,14 +609,14 @@ img {
   letter-spacing: 0.03em;
 }
 
-.form-modal__icon {
+.modal__icon {
   position: absolute;
   top: 28px;
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-modal__name {
+.modal__name {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -622,16 +625,22 @@ img {
   color: #757575;
 }
 
-.form-modal__comment {
+.modal__comment {
   resize: none;
   padding: 12px 16px;
   height: 120px;
 }
-.form-modal__comment::placeholder {
+.modal__comment::placeholder {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.send__button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }
 
 .checkbox {
@@ -685,12 +694,6 @@ img {
   text-decoration-line: none;
 }
 
-.send__button {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-}
-
 .menu {
   display: flex;
   justify-content: center;
@@ -718,7 +721,7 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   cursor: pointer;
-  transition-property: color, background-color;
+  transition-property: color background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -726,6 +729,11 @@ img {
   background-color: #2196F3;
   color: #FFFFFF;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.menu__button--active {
+  background-color: #188CE8;
+  color: #FFFFFF;
 }
 
 .portfolio {

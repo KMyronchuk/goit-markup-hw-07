@@ -21,9 +21,7 @@
     border-radius: 4px;
     color: $box-icon-color;
 
-    transition-property: border-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: $cubic-function;
+    @include transitions(color background-color);
 
     &:hover,
     &:focus {color: $accent-color;

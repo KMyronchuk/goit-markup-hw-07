@@ -1,0 +1,25 @@
+.address {
+    color: $white-text;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+}
+
+.address__item {
+    margin-top: 9px;
+}
+
+
+.address__info {
+    color: $address-color;
+    text-decoration: none;
+
+ @include transitions(color background-color);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}

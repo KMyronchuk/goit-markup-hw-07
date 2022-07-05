@@ -1,0 +1,123 @@
+.footer {
+    padding: 60px 0;
+    background-color: $footer-background-color;
+}
+
+.logo__footer {color: $white-text;}
+
+.footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.social {
+    display: flex;
+    margin-right: 93px;
+}
+
+.social__item {
+    margin-left: 10px;
+
+    &:first-child {margin-left: 0;}
+}
+
+.footer__social {
+    margin-left: 70px;
+}
+
+.footer__title {
+    color: $button-accent-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: $button-accent-color;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic-function;
+
+    &:hover,
+    &:focus {background-color: $accent-color;}
+}
+
+
+.social__icon {
+    fill: currentColor;
+
+    &:hover,
+    &:focus {fill: currentColor;}
+}
+
+
+.address {
+    color: $white-text;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+}
+
+.address__item {
+    margin-top: 9px;
+}
+
+
+.address__info {
+    color: $address-color;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic-function;
+
+    &:hover, 
+    &:focus {color: $accent-color;}
+}
+
+
+.form__sub {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.form__input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: $shadow;
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+
+
+    padding: 0;
+    padding-left: 16px;
+
+
+    background-color: $footer-background-color;
+    color: $white-text;
+}
+
+
+.form__icon {
+    margin-left: 10px;
+}
+
+.form__button{
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,38 @@
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clients__item {
+    width: calc((100% - 150px)/6);
+    margin-left: 30px;
+
+    &:first-child {margin-left: 0;}
+}
+
+
+
+.clients__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    border: 1px solid $box-icon-color;
+    border-radius: 4px;
+    color: $box-icon-color;
+
+    transition-property: border-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic-function;
+
+    &:hover,
+    &:focus {color: $accent-color;
+        border-color: $accent-color;}
+}
+
+
+
+
+.clients__logo {
+    fill: currentColor;
+}
